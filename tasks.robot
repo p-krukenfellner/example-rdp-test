@@ -9,7 +9,7 @@ Run Teardown
 
 *** Tasks ***
 RDP Test
-    Open Executable    calc.exe    Calculator
+    Open Executable    calc.exe    %{CALCULATOR_NAME}
     Send Keys    123
     Screenshot  output/success.png  desktop=True
     [Teardown]   Run Teardown
